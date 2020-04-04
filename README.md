@@ -16,18 +16,17 @@
 
     ```
     git clone https://github.com/funggtopp/docker-onlyoffice-nextcloud-mysql/
-    cd docker-onlyoffice-nextcloud
+    cd docker-onlyoffice-nextcloud-mysql
     ```
 
-2. Run Docker Compose:
+2. 运行 Docker Compose:
 
-    **Please note**: the action must be performed with **root** rights.
-
+   
     ```
-    docker-compose up -d
+    sudo docker-compose up -d
     ```
 
-    **Please note**: you might need to wait a couple of minutes when all the containers are up and running after the above command.
+    **注意**:下载各个镜像需要等待一定的时间；如果使用的是阿里云的分镜像可能速度会快一些。例如使用[阿里云杭州站](https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors)
 
 3. Now launch the browser and enter the webserver address. The Nextcloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
 
