@@ -15,7 +15,7 @@
 1. 在终端中运行如下命令:
 
     ```
-    git clone https://github.com/funggtopp/docker-onlyoffice-nextcloud/
+    git clone https://github.com/funggtopp/docker-onlyoffice-nextcloud-mysql/
     cd docker-onlyoffice-nextcloud
     ```
 
