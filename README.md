@@ -53,12 +53,12 @@
 
   脚本将自动安装onlyoffice连接器，并对其进行相应设置。需要注意的是，一般情况下，在国内环境是无法正常自动安装的。如果有显示onlyoffice 无法正确安装，此时，需要进行手动安装。
   ### 手动安装onlyoffice app
-  (1)从https://apps.nextcloud.com/ 下载到onlyoffice的压缩包。
-  (2)解压。（要按目录结构解压才行)
-  (3)将onlyoffice目录完整拷贝到项目目录的app_data/apps目录下。
-  (4)进入nextcloud设置页面。在应用选项卡里能看到onlyoffice了。
-  (5)手动设置。将'Document Editing Service address'设置为'/ds-vpath/'；将'Document Editing Service address for internal requests from the server'设置为'http://onlyoffice-document-server/' ；将'Server address for internal requests from the Document Editing Service'设置为'http://nginx-server/'
-  (6)保存。
+  *(1)从https://apps.nextcloud.com/ 下载到onlyoffice的压缩包。
+  *(2)解压。（要按目录结构解压才行)
+  *(3)将onlyoffice目录完整拷贝到项目目录的app_data/apps目录下。
+  *(4)进入nextcloud设置页面。在应用选项卡里能看到onlyoffice了。
+  *(5)手动设置。将'Document Editing Service address'设置为'/ds-vpath/'；将'Document Editing Service address for internal requests from the server'设置为'http://onlyoffice-document-server/' ；将'Server address for internal requests from the Document Editing Service'设置为'http://nginx-server/'
+  *(6)保存。
 
 
 ## ONLYOFFICE Document Server editions
