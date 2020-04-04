@@ -63,7 +63,7 @@
 
 ## ONLYOFFICE Document Server editions
 
-Here we offer you to deploy ownCloud with preconfigured free version of ONLYOFFICE Document Server. Note that there're commercial versions of it. 
+ Here we offer you to deploy ownCloud with preconfigured free version of ONLYOFFICE Document Server. Note that there're commercial versions of it. 
 
 **ONLYOFFICE Document Server:**
 
