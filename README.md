@@ -60,7 +60,20 @@
   * (5)手动设置。将'Document Editing Service address'设置为'/ds-vpath/'；将'Document Editing Service address for internal requests from the server'设置为'http://onlyoffice-document-server/' ；将'Server address for internal requests from the Document Editing Service'设置为'http://nginx-server/'
   * (6)保存。
 
-
+5. 配置`config.php`，增加访问地址
+* 终端进入app_data/config目录，找到 config.php 文件，使用 `sudo gedit ./config.php`打开该文件。
+* 在 trusted_domains 健值处使用如下设置。
+```
+  'trusted_domains' => 
+    array (
+      0 => '127.0.0.1',
+      1 => 'nginx-server',
+      2 => '192.168.3.100',
+    ),
+ ```
+ 可以继续按顺序增加地址或域名网址。***注意***：这些地址是nextcloud服务器的IP地址或者可访问的域名。不是客户端的地址。
+### 现在可以使用新设置好的nextcloud服务了。
+以下为拓展阅读部分，可以不看。
 ## ONLYOFFICE Document Server editions
 
  Here we offer you to deploy ownCloud with preconfigured free version of ONLYOFFICE Document Server. Note that there're commercial versions of it. 
