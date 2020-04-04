@@ -28,17 +28,37 @@
 
     **注意**:下载各个镜像需要等待一定的时间；如果使用的是阿里云的分镜像可能速度会快一些。例如使用[阿里云杭州站](https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors)
 
-3. Now launch the browser and enter the webserver address. The Nextcloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
+3. 打开浏览器，输入 http://127.0.0.1:80 进入配置页面。在数据库使用选项上，我们应该选择mysql。填空内容请按照我们预设的内容进行填写。
+   用户名:nextcloud
+   密码:nextcloud123
+   数据库名:nextcloud
+   主机:db
+   －－－－－－－－－
+   进入用户主界面后，不要进行任何操作，执行第4步。
+   如果对默认的设置进行个性设置，那么在yml文件中，对以下内容进行相应设置即可。将用户名或密码进行变更。
+   ```
+       environment:
+      MYSQL_ROOT_PASSWORD: root123456
+      MYSQL_DATABASE: nextcloud
+      MYSQL_USER: nextcloud
+      MYSQL_PASSWORD: nextcloud123
+   ```
 
-4. Go to the project folder and run the `set_configuration.sh` script:
+4. 运行 `set_configuration.sh` 脚本:
 
-    **Please note**: the action must be performed with **root** rights.
-
+   
     ```
-    bash set_configuration.sh
+    sudo bash set_configuration.sh
     ```
 
-Now you can enter Nextcloud and create a new document. It will be opened in ONLYOFFICE Document Server.
+  脚本将自动安装onlyoffice连接器，并对其进行相应设置。需要注意的是，一般情况下，在国内环境是无法正常自动安装的。如果有显示onlyoffice 无法正确安装，此时，需要进行手动安装。
+  ### 手动安装onlyoffice app
+  (1)从https://apps.nextcloud.com/ 下载到onlyoffice的压缩包。
+  (2)解压。（要按目录结构解压才行)
+  (3)将onlyoffice目录完整拷贝到项目目录的app_data/apps目录下。
+  (4)进入nextcloud设置页面。在应用选项卡里能看到onlyoffice了。
+  (5)手动设置。将'Document Editing Service address'设置为'/ds-vpath/'；将'Document Editing Service address for internal requests from the server'设置为'http://onlyoffice-document-server/' ；将'Server address for internal requests from the Document Editing Service'设置为'http://nginx-server/'
+  (6)保存。
 
 
 ## ONLYOFFICE Document Server editions
