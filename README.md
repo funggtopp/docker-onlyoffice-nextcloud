@@ -51,7 +51,7 @@
     sudo bash set_configuration.sh
     ```
 
-  脚本将自动安装onlyoffice连接器，并对其进行相应设置。需要注意的是，一般情况下，在国内环境是无法正常自动安装的。如果有显示onlyoffice 无法正确安装，此时，需要进行手动安装。
+  脚本将自动安装onlyoffice连接器，并对其进行相应设置。需要注意的是，一般情况下，在国内环境是无法正常自动安装的。如果有显示onlyoffice 无法正确安装，此时，需要进行手动安装。<br>
   <B>手动安装onlyoffice app</B>
   * (1)从https://apps.nextcloud.com/ 下载到onlyoffice的压缩包。
   * (2)解压。（要按目录结构解压才行)
