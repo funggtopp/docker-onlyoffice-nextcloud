@@ -1,20 +1,21 @@
-## Document Server and Nextcloud Docker installation
+## 集成onlyoffice+mysql+nextcloud的docker安装
 
-Document Server and Nextcloud Docker installation will install the preconfigured version of [ONLYOFFICE Document Server][2] connected to Nextcloud to your server running them in Docker containers.
-
-
-## Requirements
-
-* The latest version of Docker (can be downloaded here: [https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/))
-* Docker compose (can be downloaded here: [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/))
+文档编辑器使用onlyoffice
+数据库使用mysql 8.0
 
 
-## Installation
+## 基本环境
 
-1. Get the latest version of this repository running the command:
+* Docker (下载或安装指南: [https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/))
+* Docker compose (下载或安装指南: [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/))
+
+
+## 安装
+
+1. 在终端中运行如下命令:
 
     ```
-    git clone https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud
+    git clone https://github.com/funggtopp/docker-onlyoffice-nextcloud/
     cd docker-onlyoffice-nextcloud
     ```
 
