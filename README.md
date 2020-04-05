@@ -74,6 +74,9 @@
  可以继续按顺序增加地址或域名网址。***注意***：这些地址是nextcloud服务器的IP地址或者可访问的域名。不是客户端的地址。
 ### 现在可以使用新设置好的nextcloud服务了。
 以下为拓展阅读部分，可以不看。
+## 中文字体名称的显示问题
+* 网上能搜索到的办法，均只是用来解决显示中文的。新版本的onlyoffice已经可以正常显示中文。问题仿佛解决，但对于那些对文件中的中文字体有严格要求，比如办公时用到的办公字体，支持不是太友好。这主要表现在字体选择下拉列表中，中文字体名称是用英文显示的。因此，本地编辑的文件和在线编辑的文件，在字体上并不能一致，致使排版错误。
+* 解决的办法是导入本人在onlyoffice-chinese-fonts项目中的字体。
 ## ONLYOFFICE Document Server editions
 
  Here we offer you to deploy ownCloud with preconfigured free version of ONLYOFFICE Document Server. Note that there're commercial versions of it. 
